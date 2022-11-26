@@ -73,7 +73,16 @@ span {
     display: none;
     color: rgb(236, 219, 219);
 }
-
+@media only screen and (max-width:1700px){ 
+#slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        margin-bottom: 1000px;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+}
 
 @media only screen and (min-width:700px) {
     #slider figure{

@@ -77,7 +77,7 @@ span {
 #slider figure{
         position: relative;
         width: 500%;
-        margin-bottom: 600px;
+        margin-bottom: 90000px;
         left: 0;
         animation: 20s slider infinite;
     }

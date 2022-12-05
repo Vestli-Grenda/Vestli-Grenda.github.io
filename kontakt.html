@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONTAKT OSS</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+   <div class="container">
+        
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>
+             KONTAKT OSS
+         </h3>
+         <input type="text" id="name" placeholder="Ditt Navn" required="">
+            <input type="Email" id="Email" placeholder="Epost Adressen" required="">
+         <input type="text" id="Phone" placeholder="Phone No." required="">
+          <textarea id="message" rows="4" placeholder="Hvordan kan vi hjelpe deg?"></textarea>
+          <button type="submit">Send</button>
+         </form>
+
+
+   </div>
+        
+
+
+
+
+</body>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script> 
+
+function sendEmail(){
+                Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "notfoundguy091@gmail.com",
+    Password : "NotShowFaceInPulic.com<Html>hello</html>Hvorfor skal zuhaib jage deg rundt skolen?",
+    To : 'vestligrenda@gmail.com',
+    From : "Email",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+           
+</script>
+</html>
